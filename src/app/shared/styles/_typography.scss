@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap');
+
+html, body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.highlight-blue {
+  color: #2C7EF8;
+}
+
+@for $i from 1 through 9 {
+  $value: $i * 100;
+  .fw-#{$value} {
+    font-weight: $value;
+  }
+}

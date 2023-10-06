@@ -1,0 +1,394 @@
+<app-header></app-header>
+<main class="container">
+  <div class="main-header-text text-center text-capitalize">
+    <h2>Wait ! your order in progress.</h2>
+    <p class="text-muted fw-500">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+    </p>
+  </div>
+  <div class="steps-list-container my-5">
+    <div class="mobile-view d-lg-none">
+      <ul
+        class="steps-list d-flex align-content-center justify-content-between"
+        style="--_item-circle-size: 24px"
+      >
+        <li
+          class="step-list-item flex-column align-items-center text-center checked"
+        >
+          <span class="circle-check">
+            <img src="/assets/icons/tick-circle.svg" alt="" srcset="" />
+          </span>
+          <p style="font-size: 12px">Cart Review</p>
+        </li>
+        <li
+          class="step-list-item flex-column align-items-center text-center small checked"
+        >
+          <span class="circle-check">
+            <img src="/assets/icons/tick-circle.svg" alt="" srcset="" />
+          </span>
+          <p style="font-size: 12px">Checkout</p>
+        </li>
+        <li
+          class="step-list-item flex-column align-items-center text-center small active"
+        >
+          <span class="circle-check"> 3 </span>
+          <p style="font-size: 12px">Special Offer</p>
+        </li>
+        <li
+          class="step-list-item flex-column align-items-center text-center small"
+        >
+          <span class="circle-check"> 4 </span>
+          <p style="font-size: 12px">Confirmation</p>
+        </li>
+      </ul>
+    </div>
+    <div class="desktop-view d-none d-lg-block">
+      <ul
+        class="steps-list d-flex align-content-center justify-content-between"
+      >
+        <li class="step-list-item flex-row checked">
+          <span class="circle-check">
+            <img src="/assets/icons/tick-circle.svg" alt="" srcset="" />
+          </span>
+          <p class="m-0">Step 1 : Cart Review</p>
+        </li>
+        <li class="step-list-item flex-row checked">
+          <span class="circle-check">
+            <img src="/assets/icons/tick-circle.svg" alt="" srcset="" />
+          </span>
+          <p class="m-0">Step 2 : Checkout</p>
+        </li>
+        <li class="step-list-item flex-row active">
+          <span class="circle-check"> 3 </span>
+          <p class="m-0">Step 3 : Special Offer</p>
+        </li>
+        <li class="step-list-item flex-row">
+          <span class="circle-check"> 4 </span>
+          <p class="m-0">Step 4 : Confirmation</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-content mb-4">
+    <div class="mobile-view d-flex flex-column d-lg-none text-center">
+      <p class="big-text">
+        <span class="highlight">ONE TIME ONLY</span> special price for 6 extra
+        Clarifion for only <span class="highlight">$14 each</span> ($84.00
+        total!)
+      </p>
+      <img src="/assets/content/image 4.png" class="content-img" />
+      <div class="product-card d-flex mb-3">
+        <img
+          src="/assets/content/product-img.png"
+          alt=""
+          srcset=""
+          class="card-img"
+        />
+        <div class="card-body py-2 ps-3 pe-0">
+          <div class="card-title mb-1">
+            <p class="product-name flex-grow-1 text-start">
+              Clarifion Air Ionizer
+            </p>
+            <p class="product-price">
+              <del class="text-muted">$180</del>
+              <span class="highlight ms-2"> $84 </span>
+            </p>
+          </div>
+          <div class="card-review d-flex gap-1 mb-2">
+            <img src="/assets/icons/star-filled.svg" class="review-star" />
+            <img src="/assets/icons/star-filled.svg" class="review-star" />
+            <img src="/assets/icons/star-filled.svg" class="review-star" />
+            <img src="/assets/icons/star-filled.svg" class="review-star" />
+            <img src="/assets/icons/star-filled.svg" class="review-star" />
+          </div>
+          <div class="card-content">
+            <span class="checkbox"></span>
+            <p class="m-0">12 left in Stock</p>
+          </div>
+        </div>
+      </div>
+      <p style="font-size: var(--_regular-fs); font-weight: 500">
+        Simply plug a Clarifion into any standard outlet and replace bulky,
+        expensive air purifiers with a simple.
+      </p>
+      <ul class="d-flex flex-column checklist mb-3">
+        <li class="check-item">
+          <img
+            src="/assets/icons/tick-circle blue.svg"
+            alt=""
+            srcset=""
+            class="list-check"
+          />
+          <span
+            >Negative Ion Technology may
+            <strong>help with allergens</strong></span
+          >
+        </li>
+        <li class="check-item">
+          <img
+            src="/assets/icons/tick-circle blue.svg"
+            alt=""
+            srcset=""
+            class="list-check"
+          />
+          <span>Designed for <strong>air rejuvenation</strong></span>
+        </li>
+        <li class="check-item">
+          <img
+            src="/assets/icons/tick-circle blue.svg"
+            alt=""
+            srcset=""
+            class="list-check"
+          />
+          <span
+            ><strong>Perfect for every room</strong> in all types of
+            places.</span
+          >
+        </li>
+      </ul>
+      <div class="discount-card mb-3">
+        <span class="circle">%</span>
+        <p class="content m-0">
+          Save <span class="highlight-blue">53%</span> and get
+          <span class="highlight-blue">6 extra Clarifision</span> for only
+          <span class="highlight-blue">$14 Each</span>.
+        </p>
+      </div>
+      <a
+        href="#"
+        class="btn rounded-pill border-0 text-white claim-discount-btn mb-3"
+        >Yes - Claim my discount</a
+      >
+      <div class="shipping-method-card mb-3">
+        <div class="card-top">
+          <span>Free shipping</span>
+          <span class="divider"></span>
+          <span
+            ><img
+              src="/assets/icons/locker black.svg"
+              class="locker-icon me-1"
+            />
+            Secure 256-bit SSL encryption</span
+          >
+        </div>
+        <hr class="my-2" />
+        <div
+          class="cardflags d-flex align-items-center justify-content-center"
+          style="gap: 2px"
+        >
+          <img src="/assets/cardflags/visa.svg" class="cardflag" />
+          <img src="/assets/cardflags/shop pay.svg" class="cardflag" />
+          <img src="/assets/cardflags/paypal.svg" class="cardflag" />
+          <img src="/assets/cardflags/mastercard.svg" class="cardflag" />
+          <img src="/assets/cardflags/gpay.svg" class="cardflag" />
+          <img src="/assets/cardflags/apple pay.svg" class="cardflag" />
+          <img src="/assets/cardflags/amex.svg" class="cardflag" />
+        </div>
+      </div>
+      <a
+        href="#"
+        class="reject-offer text-uppercase mb-3"
+        style="color: #f82c2c"
+        >No thanks, I don’t want this.</a
+      >
+      <div class="content-bottom d-flex text-start align-items-start">
+        <img
+          src="/assets/content/seal-guarantee.png"
+          class="seal-guarantee-img"
+        />
+        <p class="m-0">
+          If you are not completely thrilled with your Clarifion - We have a
+          <strong>30 day satisfaction guarantee</strong>. Please refer to our
+          return policy at the bottom of the page for more details. Happy
+          Shopping!
+        </p>
+      </div>
+    </div>
+    <div class="desktop-view d-none flex-column d-lg-flex">
+      <div class="row">
+        <div class="left col-6 d-flex flex-column">
+          <img
+            src="/assets/content/image 4.png"
+            class="content-img flex-shrink-0"
+          />
+          <div class="testimonial-card flex-grow-1">
+            <div class="card-header d-flex">
+              <img
+                src="/assets/testimonials/testimonial-model.png"
+                class="card-img"
+              />
+              <div class="d-flex flex-column">
+                <div class="review d-flex gap-1">
+                  <img
+                    src="/assets/icons/star-filled.svg"
+                    class="review-star"
+                  />
+                  <img
+                    src="/assets/icons/star-filled.svg"
+                    class="review-star"
+                  />
+                  <img
+                    src="/assets/icons/star-filled.svg"
+                    class="review-star"
+                  />
+                  <img
+                    src="/assets/icons/star-filled.svg"
+                    class="review-star"
+                  />
+                  <img
+                    src="/assets/icons/star-filled.svg"
+                    class="review-star"
+                  />
+                </div>
+                <div class="d-flex">
+                  <span class="name fw-500">Ken T.</span>
+                  <span class="verified-customer">Verified Customer</span>
+                </div>
+              </div>
+            </div>
+            <p class="card-body m-0">
+              “As soon as the Clarifions arrived I put one in my bedroom. This
+              was late in the afternoon. When I went to the bedroom in the
+              evening it smelled clean. When I went to bed I felt I could
+              breathe better. Wonderful.”
+            </p>
+          </div>
+        </div>
+        <div class="right col-6 d-flex flex-column">
+          <p class="big-text">
+            <span class="highlight">ONE TIME ONLY</span> special price for 6
+            extra Clarifion for only
+            <span class="highlight">$14 each</span> ($84.00 total!)
+          </p>
+          <div class="product-card d-flex mb-3">
+            <img
+              src="/assets/content/product-img.png"
+              alt=""
+              srcset=""
+              class="card-img"
+            />
+            <div class="card-body py-2 ps-3 pe-0">
+              <div class="card-title mb-1">
+                <p class="product-name flex-grow-1 text-start">
+                  Clarifion Air Ionizer
+                </p>
+                <p class="product-price">
+                  <del class="text-muted">$180</del>
+                  <span class="highlight ms-2"> $84 </span>
+                </p>
+              </div>
+              <div class="card-review d-flex gap-1 mb-2">
+                <img src="/assets/icons/star-filled.svg" class="review-star" />
+                <img src="/assets/icons/star-filled.svg" class="review-star" />
+                <img src="/assets/icons/star-filled.svg" class="review-star" />
+                <img src="/assets/icons/star-filled.svg" class="review-star" />
+                <img src="/assets/icons/star-filled.svg" class="review-star" />
+              </div>
+              <div class="card-content">
+                <span class="checkbox"></span>
+                <p class="m-0">12 left in Stock</p>
+              </div>
+            </div>
+          </div>
+          <p style="font-size: var(--_regular-fs); font-weight: 500">
+            Simply plug a Clarifion into any standard outlet and replace bulky,
+            expensive air purifiers with a simple.
+          </p>
+          <ul class="d-flex flex-column checklist mb-3">
+            <li class="check-item">
+              <img
+                src="/assets/icons/tick-circle blue.svg"
+                alt=""
+                srcset=""
+                class="list-check"
+              />
+              <span
+                >Negative Ion Technology may
+                <strong>help with allergens</strong></span
+              >
+            </li>
+            <li class="check-item">
+              <img
+                src="/assets/icons/tick-circle blue.svg"
+                alt=""
+                srcset=""
+                class="list-check"
+              />
+              <span>Designed for <strong>air rejuvenation</strong></span>
+            </li>
+            <li class="check-item">
+              <img
+                src="/assets/icons/tick-circle blue.svg"
+                alt=""
+                srcset=""
+                class="list-check"
+              />
+              <span
+                ><strong>Perfect for every room</strong> in all types of
+                places.</span
+              >
+            </li>
+          </ul>
+          <div class="discount-card mb-3">
+            <span class="circle">%</span>
+            <p class="content m-0">
+              Save <span class="highlight-blue">53%</span> and get
+              <span class="highlight-blue">6 extra Clarifision</span> for only
+              <span class="highlight-blue">$14 Each</span>.
+            </p>
+          </div>
+          <a
+            href="#"
+            class="btn rounded-pill border-0 text-white claim-discount-btn w-100 mb-3"
+            >Yes - Claim my discount</a
+          >
+          <div class="shipping-method-card mb-3">
+            <div class="card-top">
+              <span>Free shipping</span>
+              <span class="divider"></span>
+              <span
+                ><img
+                  src="/assets/icons/locker black.svg"
+                  class="locker-icon me-1"
+                />
+                Secure 256-bit SSL encryption</span
+              >
+            </div>
+            <hr class="my-2" />
+            <div
+              class="cardflags d-flex align-items-center justify-content-center"
+              style="gap: 2px"
+            >
+              <img src="/assets/cardflags/visa.svg" class="cardflag" />
+              <img src="/assets/cardflags/shop pay.svg" class="cardflag" />
+              <img src="/assets/cardflags/paypal.svg" class="cardflag" />
+              <img src="/assets/cardflags/mastercard.svg" class="cardflag" />
+              <img src="/assets/cardflags/gpay.svg" class="cardflag" />
+              <img src="/assets/cardflags/apple pay.svg" class="cardflag" />
+              <img src="/assets/cardflags/amex.svg" class="cardflag" />
+            </div>
+          </div>
+          <a
+            href="#"
+            class="reject-offer text-uppercase text-center mx-auto mb-3"
+            style="color: #f82c2c"
+            >No thanks, I don’t want this.</a
+          >
+          <div class="content-bottom d-flex text-start align-items-start">
+            <img
+              src="/assets/content/seal-guarantee.png"
+              class="seal-guarantee-img"
+            />
+            <p class="m-0">
+              If you are not completely thrilled with your Clarifion - We have a
+              <strong>30 day satisfaction guarantee</strong>. Please refer to
+              our return policy at the bottom of the page for more details.
+              Happy Shopping!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<app-footer></app-footer>

@@ -1,0 +1,96 @@
+<header class="w-100">
+  <div class="top-links-container d-flex w-100">
+    <div class="desktop-view d-none d-lg-flex w-100 h-100">
+      <ul class="top-links-list container">
+        <li class="top-link-item">
+          <a href="#" class="top-link">
+            <img
+              src="/assets/icons/fluent_checkmark-starburst-20-regular.svg"
+              class="locker-icon"
+            />
+            30-DAY SATISFACTION GUARANTEE
+          </a>
+        </li>
+        <li class="top-link-item">
+          <a href="#" class="top-link">
+            <img src="/assets/icons/ph_truck-light.svg" class="locker-icon" />
+            Free delivery on orders over $40.00
+          </a>
+        </li>
+        <li class="top-link-item">
+          <a href="#" class="top-link">
+            <img
+              src="/assets/icons/mdi_cards-heart-outline.svg"
+              class="locker-icon"
+            />
+            50.000+ HAPPY CUSTOMERS
+          </a>
+        </li>
+        <li class="top-link-item">
+          <a href="#" class="top-link">
+            <img
+              src="/assets/icons/fluent_arrow-sync-checkmark-20-regular.svg"
+              class="locker-icon"
+            />
+            100% Money Back Guarantee
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="mobile-view d-lg-none position-relative overflow-hidden w-100 h-100"
+    >
+      <button class="control control-left" (click)="decreaseItemIndex()">
+        <img src="/assets/icons/arrow-left.svg" alt="" srcset="" />
+      </button>
+      <button class="control control-right" (click)="increaseItemIndex()">
+        <img src="/assets/icons/arrow-left.svg" alt="" srcset="" />
+      </button>
+      <ul
+        class="top-links-list container position-relative"
+        [style]="'--_current-item-index: ' + currentItemIndex"
+      >
+        <li class="top-link-item position-absolute" style="--_item-index: 0">
+          <a href="#" class="top-link">
+            <img
+              src="/assets/icons/fluent_checkmark-starburst-20-regular.svg"
+              class="locker-icon"
+            />
+            30-DAY SATISFACTION GUARANTEE
+          </a>
+        </li>
+        <li class="top-link-item position-absolute" style="--_item-index: 1">
+          <a href="#" class="top-link">
+            <img src="/assets/icons/ph_truck-light.svg" class="locker-icon" />
+            Free delivery on orders over $40.00
+          </a>
+        </li>
+        <li class="top-link-item position-absolute" style="--_item-index: 2">
+          <a href="#" class="top-link">
+            <img
+              src="/assets/icons/mdi_cards-heart-outline.svg"
+              class="locker-icon"
+            />
+            50.000+ HAPPY CUSTOMERS
+          </a>
+        </li>
+        <li class="top-link-item position-absolute" style="--_item-index: 3">
+          <a href="#" class="top-link">
+            <img
+              src="/assets/icons/fluent_arrow-sync-checkmark-20-regular.svg"
+              class="locker-icon"
+            />
+            100% Money Back Guarantee
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="top-brands-container container">
+    <div class="top-brands">
+      <img src="/assets/brands/Clarifion_Logo.png" class="me-auto" />
+      <img src="/assets/brands/McAfee_Secure.png" />
+      <img src="/assets/brands/norton-antivirus-logo 1.png" />
+    </div>
+  </div>
+</header>

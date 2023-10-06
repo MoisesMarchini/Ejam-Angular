@@ -1,0 +1,213 @@
+.steps-list-container {
+  --_item-circle-size: 32px;
+  li.step-list-item {
+    --_item-circle-bg-color: transparent;
+    --_item-border-color: var(--bs-primary);
+    --_item-font-color: var(--bs-primary);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: .75rem;
+    transition: 200ms ease;
+    * {
+      transition: inherit;
+    }
+    &.checked, &.active {
+      --_item-font-color: white;
+    }
+    &.checked {
+      --_item-circle-bg-color: #85BF55;
+      --_item-border-color: #85BF55;
+    }
+    &.active {
+      --_item-circle-bg-color: var(--bs-primary);
+      >p{
+        font-weight: 600;
+      }
+    }
+    &:hover{
+      &:not(.checked){
+        --_item-font-color: white;
+        --_item-circle-bg-color: var(--bs-primary);
+      }
+    }
+  }
+  .circle-check {
+    width: var(--_item-circle-size);
+    height: var(--_item-circle-size);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: var(--_item-circle-bg-color);
+    border: 2px solid var(--_item-border-color);
+    color: var(--_item-font-color);
+    > img {
+      max-width: 60%;
+    }
+  }
+}
+
+.main-content{
+  .desktop-view{
+    --_regular-fs: 16px;
+    background-color: #FAFAFA;
+    padding: 24px;
+    margin: 24px 0;
+    .testimonial-card {
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding: 24px;
+      > .card-header {
+        .verified {
+          font-size: 14px;
+          color: #5BB59A;
+        }
+      }
+    }
+  }
+  .mobile-view{
+    --_regular-fs: 12px;
+  }
+  .content-img {
+    border-radius: 10px;
+    object-fit: contain;
+    margin-bottom: 24px;
+  }
+
+  .big-text {
+    font-size: 24px;
+    text-transform: capitalize;
+    span.highlight {
+      color: #2C7EF8;
+    }
+  }
+
+  .product-card {
+    .card-body {
+      .card-title {
+        display: flex;
+        font-size: 14px;
+        font-weight: 500;
+        p {
+          margin: 0;
+        }
+        .product-price {
+          del {
+            font-size: 10px;
+          }
+          span.highlight {
+            color: #2C7EF8;
+          }
+        }
+      }
+      .card-content {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        span.checkbox {
+          position: relative;
+          width: 16px;
+          aspect-ratio: 1;
+          background-color: #E3EEFF;
+          margin-right: 1rem;
+          display: grid;
+          place-items: center;
+          border-radius: 50%;
+          &::after{
+            content: '';
+            position: absolute;
+            width: 8px;
+            aspect-ratio: 1;
+            border-radius: inherit;
+            background-color:#2C7EF8;
+          }
+        }
+      }
+    }
+    .card-img {
+      width: 80px;
+      aspect-ratio: 1;
+    }
+  }
+
+  ul.checklist {
+    gap: 1rem;
+    li.check-item {
+      font-size: var(--_regular-fs);
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      img.list-check{
+        width: 18px;
+      }
+    }
+  }
+
+  .discount-card {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    background-color: #EDF3FD;
+    border-radius: 10px;
+    span.circle {
+      width: 38px;
+      aspect-ratio: 1;
+      color: white;
+      font-size: 14px;
+      display: grid;
+      place-items: center;
+      background-color: #2C7EF8;
+      border-radius: 50%;
+    }
+  }
+
+  a.claim-discount-btn {
+    text-decoration: none;
+    background-color: #59AE43;
+    padding: 16px 64px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .shipping-method-card {
+    padding: 8px 16px;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px;
+    gap: 12px;
+    font-size: var(--_regular-fs);
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: inherit;
+      > * {
+        display: flex;
+        align-items: center;
+      }
+      .divider {
+        height: 14px;
+        width: 2px;
+        background-color: #CFCFCF;
+      }
+      img.locker-icon {
+        width: 14px;
+      }
+    }
+    .cardflags img.cardflag {
+      width: 32px;
+    }
+  }
+
+  .content-bottom {
+    gap: 16px;
+    p {
+      font-size: var(--_regular-fs);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+footer {
+  background-color: var(--top-header-bg);
+  color: white;
+  padding: 24px 0;
+}
+
+.container > p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: .5rem;
+  font-size: 12px;
+  margin: 0;
+}

@@ -53,6 +53,13 @@
     background-color: #FAFAFA;
     padding: 24px;
     margin: 24px 0;
+    .big-text {
+      font-size: 32px;
+    }
+    .product-card .card-img {
+      width: 134px;
+      height: 134px;
+    }
     .testimonial-card {
       background-color: #FFFFFF;
       border-radius: 10px;
@@ -61,16 +68,44 @@
       gap: 18px;
       padding: 24px;
       > .card-header {
-        .verified {
+        align-items: center;
+        gap: 13px;
+        .testimonial-img {
+          width: 48px;
+          height: 48px;
+        }
+        .verified-customer {
           font-size: 14px;
           color: #5BB59A;
+          display: flex;
+          gap: 10px;
+          align-items: center;
         }
       }
     }
+    .discount-card span.circle {
+      width: 32px;
+    }
+    .seal-guarantee-img {
+      height: 100%;
+      width:auto;
+    }
+    .shipping-method-card{
+      --_regular-fs: 12px;
+      .card-top > * {
+        white-space: nowrap;
+      }
+      .cardflags img.cardflag {
+        width: 24px;
+      }
+
+    }
   }
+
   .mobile-view{
     --_regular-fs: 12px;
   }
+
   .content-img {
     border-radius: 10px;
     object-fit: contain;
@@ -130,7 +165,9 @@
     }
     .card-img {
       width: 80px;
-      aspect-ratio: 1;
+      height: 80px;
+      background-color: #2C7EF8;
+      border-radius: 10px;
     }
   }
 
@@ -181,6 +218,7 @@
     border-radius: 4px;
     gap: 12px;
     font-size: var(--_regular-fs);
+    overflow: hidden;
     .card-top {
       display: flex;
       align-items: center;

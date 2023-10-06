@@ -1,12 +1,20 @@
 <app-header></app-header>
 <main class="container">
   <div class="main-header-text text-center text-capitalize">
-    <h2>Wait ! your order in progress.</h2>
-    <p class="text-muted fw-500">
+    <h2 class="d-none d-lg-block" style="font-size: 48px">
+      Wait ! your order in progress.
+    </h2>
+    <h2 class="d-lg-none" style="font-size: 32px">
+      Wait ! your order in progress.
+    </h2>
+    <p class="text-muted fw-500 d-none d-lg-block" style="font-size: 24px">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+    </p>
+    <p class="text-muted fw-500 d-lg-none">
       Lorem ipsum dolor sit amet, consectetur adipiscing
     </p>
   </div>
-  <div class="steps-list-container my-5">
+  <div class="steps-list-container my-lg-5 mt-4 mb-2">
     <div class="mobile-view d-lg-none">
       <ul
         class="steps-list d-flex align-content-center justify-content-between"
@@ -45,6 +53,7 @@
     <div class="desktop-view d-none d-lg-block">
       <ul
         class="steps-list d-flex align-content-center justify-content-between"
+        style="font-size: 20px"
       >
         <li class="step-list-item flex-row checked">
           <span class="circle-check">
@@ -215,9 +224,9 @@
             <div class="card-header d-flex">
               <img
                 src="/assets/testimonials/testimonial-model.png"
-                class="card-img"
+                class="testimonial-img"
               />
-              <div class="d-flex flex-column">
+              <div class="d-flex flex-column" style="gap: 10px">
                 <div class="review d-flex gap-1">
                   <img
                     src="/assets/icons/star-filled.svg"
@@ -240,13 +249,16 @@
                     class="review-star"
                   />
                 </div>
-                <div class="d-flex">
-                  <span class="name fw-500">Ken T.</span>
-                  <span class="verified-customer">Verified Customer</span>
+                <div class="d-flex" style="gap: 10px">
+                  <span class="name fw-700">Ken T.</span>
+                  <span class="verified-customer">
+                    <img src="/assets/icons/verify 1.svg" />
+                    Verified Customer</span
+                  >
                 </div>
               </div>
             </div>
-            <p class="card-body m-0">
+            <p class="card-content m-0" style="color: #4d5254">
               “As soon as the Clarifions arrived I put one in my bedroom. This
               was late in the afternoon. When I went to the bedroom in the
               evening it smelled clean. When I went to bed I felt I could
@@ -261,20 +273,20 @@
             <span class="highlight">$14 each</span> ($84.00 total!)
           </p>
           <div class="product-card d-flex mb-3">
-            <img
-              src="/assets/content/product-img.png"
-              alt=""
-              srcset=""
-              class="card-img"
-            />
-            <div class="card-body py-2 ps-3 pe-0">
-              <div class="card-title mb-1">
-                <p class="product-name flex-grow-1 text-start">
+            <img src="/assets/content/product-img.png" class="card-img" />
+            <div class="card-body ps-3 pe-0">
+              <div class="card-title mb-1 d-flex align-items-center">
+                <p
+                  class="product-name flex-grow-1 text-start fw-500"
+                  style="font-size: 20px"
+                >
                   Clarifion Air Ionizer
                 </p>
-                <p class="product-price">
-                  <del class="text-muted">$180</del>
-                  <span class="highlight ms-2"> $84 </span>
+                <p class="product-price d-flex align-items-center">
+                  <del class="text-muted" style="font-size: 14px">$180</del>
+                  <span class="highlight ms-2 fw-500" style="font-size: 18px">
+                    $84
+                  </span>
                 </p>
               </div>
               <div class="card-review d-flex gap-1 mb-2">
@@ -284,16 +296,16 @@
                 <img src="/assets/icons/star-filled.svg" class="review-star" />
                 <img src="/assets/icons/star-filled.svg" class="review-star" />
               </div>
-              <div class="card-content">
+              <div class="card-content mb-2 mt-3">
                 <span class="checkbox"></span>
                 <p class="m-0">12 left in Stock</p>
               </div>
+              <p class="m-0">
+                Simply plug a Clarifion into any standard outlet and replace
+                bulky, expensive air purifiers with a simple.
+              </p>
             </div>
           </div>
-          <p style="font-size: var(--_regular-fs); font-weight: 500">
-            Simply plug a Clarifion into any standard outlet and replace bulky,
-            expensive air purifiers with a simple.
-          </p>
           <ul class="d-flex flex-column checklist mb-3">
             <li class="check-item">
               <img
@@ -331,7 +343,7 @@
           </ul>
           <div class="discount-card mb-3">
             <span class="circle">%</span>
-            <p class="content m-0">
+            <p class="content m-0 text-start">
               Save <span class="highlight-blue">53%</span> and get
               <span class="highlight-blue">6 extra Clarifision</span> for only
               <span class="highlight-blue">$14 Each</span>.
@@ -353,19 +365,19 @@
                 />
                 Secure 256-bit SSL encryption</span
               >
-            </div>
-            <hr class="my-2" />
-            <div
-              class="cardflags d-flex align-items-center justify-content-center"
-              style="gap: 2px"
-            >
-              <img src="/assets/cardflags/visa.svg" class="cardflag" />
-              <img src="/assets/cardflags/shop pay.svg" class="cardflag" />
-              <img src="/assets/cardflags/paypal.svg" class="cardflag" />
-              <img src="/assets/cardflags/mastercard.svg" class="cardflag" />
-              <img src="/assets/cardflags/gpay.svg" class="cardflag" />
-              <img src="/assets/cardflags/apple pay.svg" class="cardflag" />
-              <img src="/assets/cardflags/amex.svg" class="cardflag" />
+              <span class="divider"></span>
+              <div
+                class="cardflags d-flex align-items-center justify-content-center"
+                style="gap: 2px"
+              >
+                <img src="/assets/cardflags/visa.svg" class="cardflag" />
+                <img src="/assets/cardflags/shop pay.svg" class="cardflag" />
+                <img src="/assets/cardflags/paypal.svg" class="cardflag" />
+                <img src="/assets/cardflags/mastercard.svg" class="cardflag" />
+                <img src="/assets/cardflags/gpay.svg" class="cardflag" />
+                <img src="/assets/cardflags/apple pay.svg" class="cardflag" />
+                <img src="/assets/cardflags/amex.svg" class="cardflag" />
+              </div>
             </div>
           </div>
           <a
@@ -376,7 +388,7 @@
           >
           <div class="content-bottom d-flex text-start align-items-start">
             <img
-              src="/assets/content/seal-guarantee.png"
+              src="/assets/content/seal-guarantee.svg"
               class="seal-guarantee-img"
             />
             <p class="m-0">

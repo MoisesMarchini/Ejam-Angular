@@ -1,5 +1,7 @@
 # EjamAngular
 
+Link to the [Original design](https://www.figma.com/file/gHf56mhtFr0lXky0poofoQ/ejam---Clarifion-Upsell-%5B-Client-V-%5D-(Copy)?type=design&node-id=0%3A1&mode=design&t=GJZXccV6TZ9cQBZT-1)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
 
 ## Development server
